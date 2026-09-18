@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="An original confidential dossier experience." />
+    <title>Vesper   Confidential Dossier</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to dossier</a>
+
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="wordmark" href="#briefing" aria-label="Vesper home">
+        <span class="wordmark-mark">V</span><span>Vesper</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav">
+        <a href="#files">The files</a>
+        <a href="#network">The network</a>
+        <a href="#timeline">The ledger</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="briefing" aria-labelledby="hero-title">
+        <div class="hero-orbit" aria-hidden="true"></div>
+        <div class="hero-grain" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow hero-kicker">Confidential dossier <span>·</span> Status: active</p>
+          <h1 id="hero-title">A gentleman<br />of <em>consequence.</em></h1>
+          <div class="hero-foot">
+            <p class="hero-copy">The names change. The rules do not. Some people move through a room; others rearrange it.</p>
+            <a class="button button-brass" href="#files">Open the file <span aria-hidden="true">↘</span></a>
+          </div>
+        </div>
+        <aside class="hero-docket" aria-label="Docket details">
+          <span>Case no.</span><strong>R-041</strong>
+          <span>Handling</span><strong>Eyes only</strong>
+        </aside>
+      </section>
+
+      <section class="files section-paper" id="files" aria-labelledby="files-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow ink">01 / The file room</p>
+          <h2 id="files-title">Every empire starts<br />with a <em>secret.</em></h2>
+          <p>Three fragments from an ever-growing archive. Read them in any order. Draw your own conclusions.</p>
+        </div>
+
+        <div class="dossier-stack reveal" aria-label="Dossier documents">
+          <article class="dossier-card card-profile" tabindex="0">
+            <div class="card-topline"><span>Intelligence profile</span><span>01 A</span></div>
+            <div class="profile-glyph" aria-hidden="true">R</div>
+            <p class="card-label">Subject</p>
+            <h3>The host<br />with the most.</h3>
+            <p class="card-copy">Cultivates proximity as carefully as leverage. Never arrives empty-handed; never leaves empty-minded.</p>
+            <div class="card-stamp">Verified</div>
+          </article>
+
+          <article class="dossier-card card-note" tabindex="0">
+            <div class="card-topline"><span>Intercepted note</span><span>04 K</span></div>
+            <blockquote>“A favor is merely a debt with better posture.”</blockquote>
+            <div class="note-rule"></div>
+            <p class="card-copy">Source unknown. Provenance: impeccable. Relevance: ongoing.</p>
+            <p class="signature">  R.</p>
+          </article>
+
+          <article class="dossier-card card-priority" tabindex="0">
+            <div class="card-topline"><span>Operational priority</span><span>Red level</span></div>
+            <div class="priority-number">03</div>
+            <h3>Always know<br />the second exit.</h3>
+            <ul class="priority-list">
+              <li>Keep the promise</li>
+              <li>Read the room</li>
+              <li>Leave a door open</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="network" id="network" aria-labelledby="network-title">
+        <div class="network-map" aria-hidden="true">
+          <span class="node n1"></span><span class="node n2"></span>
+          <span class="node n3"></span><span class="node n4"></span>
+        </div>
+
+        <div class="network-content reveal">
+          <p class="eyebrow">02 / The network</p>
+          <h2 id="network-title">The useful thing about<br />a <em>shadow</em> is that it follows.</h2>
+          <p>Information is not power. Knowing precisely when to spend it is. The archive is full of people who learned the distinction too late.</p>
+
+          <div class="intelligence-box">
+            <div class="intelligence-meta"><span>Transmission 7B</span><span>24:00 UTC</span></div>
+            <button class="intelligence-reveal" id="reveal-intelligence" type="button" aria-expanded="false" aria-controls="intelligence-detail">
+              Reveal intelligence <span aria-hidden="true">+</span>
+            </button>
+            <p id="intelligence-detail" hidden>Asset has moved off-book. The table is set. Bring your own story.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="ledger section-paper" id="timeline" aria-labelledby="timeline-title">
+        <div class="ledger-intro reveal">
+          <p class="eyebrow ink">03 / The ledger</p>
+          <h2 id="timeline-title">The art of the<br /><em>long game.</em></h2>
+        </div>
+
+        <ol class="operations">
+          <li class="operation reveal">
+            <span class="operation-index">I</span>
+            <p class="operation-date">Before the toast</p>
+            <h3>Make the room yours.</h3>
+            <p>It is not enough to arrive with a plan. You must make everyone else feel it was theirs.</p>
+          </li>
+          <li class="operation reveal">
+            <span class="operation-index">II</span>
+            <p class="operation-date">After the silence</p>
+            <h3>Trade in certainty.</h3>
+            <p>People will pay dearly for an answer. Give them the question they should have asked.</p>
+          </li>
+          <li class="operation reveal">
+            <span class="operation-index">III</span>
+            <p class="operation-date">Before dawn</p>
+            <h3>Leave the last word.</h3>
+            <p>Elegance is not winning the argument. It is knowing you do not need to finish it.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="closing" id="contact" aria-labelledby="closing-title">
+        <p class="eyebrow">End of transmission</p>
+        <h2 id="closing-title">Some invitations<br />are <em>impossible</em> to refuse.</h2>
+        <a class="button button-outline" href="mailto:contact@example.com">Make contact <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Vesper / confidential</span>
+      <span>© 2026</span>
+      <button type="button" data-back-to-top>Return to top ↑</button>
+    </footer>
+  </body>
+</html>
